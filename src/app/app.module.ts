@@ -10,6 +10,8 @@ import { MapComponent } from './map/map.component';
 import { MarkerService } from './_services/marker.service';
 import { PopUpService } from './_services/pop-up.service';
 import { PlatesService } from './_services/plates.service';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { SidebarTogglerComponent } from './sidebar-toggler/sidebar-toggler.component';
 import { LayersComponent } from './layers/layers.component';
 
 @NgModule({
@@ -17,6 +19,8 @@ import { LayersComponent } from './layers/layers.component';
     AppComponent,
     MapComponent,
     HeaderComponent,
+    SidebarComponent,
+    SidebarTogglerComponent,
     LayersComponent
   ],
   imports: [
