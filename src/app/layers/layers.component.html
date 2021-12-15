@@ -1,0 +1,30 @@
+<div class="container">
+    <h4>Layers</h4>
+    <p>Select a level of earthquake magnitude to view:</p>
+    <div *ngFor="let layer of layers" class="form-check">
+        <label for="radio_{{layer.id}}">
+            <input 
+                class="form-check-input"
+                id="radio_{{layer.id}}" 
+                [value]='layer' 
+                type="radio" 
+                name="layers_radio" 
+                [(ngModel)]="selectedLayer" 
+            >
+            {{layer.name}}
+        </label>
+    </div>
+
+    <div *ngIf="selectedLayer">
+        <br>
+        <h4>{{ selectedLayer.name }} summary</h4>
+        <p>Number of earthquakes by tectonic plate:</p>
+        <div><span>Id: </span>{{selectedLayer.id}}</div>
+        <div>
+            <label>Name:
+                <input [(ngModel)]="selectedLayer.name" placeholder="name"/>
+            </label>
+        </div>
+        
+    </div>
+</div>

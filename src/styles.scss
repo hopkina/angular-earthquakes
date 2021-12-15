@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import "~leaflet/dist/leaflet.css";
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+html, body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.popup-content {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.leaflet-popup-content-wrapper {
+    background:#212529;
+    color:#fff;
+    font-size:14px;
+    line-height:18px;
+}
+.leaflet-popup-content-wrapper a {
+    color:rgba(255,255,255,0.5);
+}
+.leaflet-popup-tip {
+    background:#212529;
+}
+
+.tooltip-content {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
